@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Navbar</title>
+  </head>
+  <body class="h-screen w-screen">
+    <header
+      class="flex items-center justify-between px-12  lg:px-20 bg-gray-200 py-3 sm:py-5 relative"
+    >
+      <img
+        class="w-16"
+        src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+        alt="logo"
+      />
+      <nav class="gap-12 hidden md:flex">
+        <a class="hover:border-b-2 border-black" href="">Product</a
+        ><a class="hover:border-b-2 border-black" href="">Features</a
+        ><a class="border-b-2 border-transparent hover:border-black" href=""
+          >Marketplace</a
+        ><a class="hover:border-b-2 border-black" href="">Company</a>
+      </nav>
+      <button
+        class="bg-teal-600 px-10 py-3 rounded-md text-white hidden md:block"
+      >
+        Login
+      </button>
+      <div class="group md:hidden">
+        <img class="w-6 md:hidden" src="./images/hamburger.png" alt="" />
+        <div
+          class="group-hover:flex flex-col items-center justify-around absolute hidden z-50 h-96 top-20 right-0 bg-red-200 w-64"
+        >
+          <nav class="gap-12 flex flex-col items-center">
+            <a class="hover:border-b-2 border-black" href="">Product</a
+            ><a class="hover:border-b-2 border-black" href="">Features</a
+            ><a class="border-b-2 border-transparent hover:border-black" href=""
+              >Marketplace</a
+            ><a class="hover:border-b-2 border-black" href="">Company</a>
+          </nav>
+          <button
+            class="bg-teal-600 px-10 py-3 rounded-md text-white"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
